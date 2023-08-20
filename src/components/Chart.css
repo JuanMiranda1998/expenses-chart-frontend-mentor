@@ -1,0 +1,140 @@
+.chart{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+    min-width: 350px;
+    background-color: var(--clr-neutral-dark-very-pale-orange);
+}
+.chartTitle{
+    margin: .5rem .25rem;
+    font-size: 1.5rem;
+    color: var(--clr-neutral-dark-brown);
+}
+.chartGraph{
+    margin-top: 1rem;
+    height: 200px;
+}
+.chartValues{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.chartValue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 45px;
+}
+.chartAmount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    padding: .325rem;
+    border-radius: 5px;
+    background-color: var(--clr-neutral-dark-brown);
+    font-size: .75rem;
+    color: var(--clr-neutral-dark-very-pale-orange);
+    transition: opacity ease 200ms;
+}
+.visible{
+    visibility: visible;
+    opacity: 100%;
+}
+.chartBar{
+    width: 35px;
+    border-radius: 5px;
+    background-color: var(--clr-primary-soft-red);
+    transition: opacity ease 200ms;
+}
+.chartBar:hover{
+    cursor: pointer;
+    opacity: 50%; 
+}
+.maximum{
+    background-color: var(--clr-primary-cyan);
+}
+.chartDay{
+    font-size: .75rem;
+    color: var(--clr-neutral-medium-brown);
+}
+.separator{
+    margin: 1.5rem auto;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-neutral-cream);
+}
+.chartDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chartTotal{
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+.totalLabel{
+    font-size: .875rem;
+    color: var(--clr-neutral-medium-brown);
+}
+.totalNumber{
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-dark-brown);
+}
+.chartPercentage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.percentageNumber{
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-dark-brown);
+}
+.percentageLabel{
+    font-size: .825rem;
+    color: var(--clr-neutral-medium-brown);
+}
+@media (min-width:768px){
+    .chart{
+        min-width: 420px;
+        padding: 1rem 1.5rem 2rem;
+    }
+    .chartGraph{
+        height: 230px;
+        margin-top: 0;
+    }
+    .chartTitle{
+        font-size: 1.75rem;
+    }
+    .chartAmount{
+        padding: .5rem;
+        font-size: .925rem;
+    }
+    .chartBar{
+        width: 40px;
+    }
+    .chartDay{
+        font-size: .875rem;
+    }
+    .totalLabel{
+        font-size: 1rem;
+    }
+    .totalNumber{
+        font-size: 1.825rem;
+    }
+    .percentageNumber{
+        font-size: 1.25rem;
+    }
+    .percentageLabel{
+        font-size: .925rem;
+    }
+}

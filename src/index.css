@@ -1,0 +1,45 @@
+:root{
+    --clr-primary-soft-red: hsl(10, 79%, 65%);
+    --clr-primary-cyan: hsl(186, 34%, 60%);
+    --clr-neutral-dark-brown: hsl(25, 47%, 15%);
+    --clr-neutral-medium-brown: hsl(28, 10%, 53%);
+    --clr-neutral-cream: hsl(27, 66%, 92%);
+    --clr-neutral-dark-very-pale-orange: hsl(33, 100%, 98%);
+
+    --ff-base:'DM Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    overflow-wrap: break-word;
+    line-height: 1.1;
+}
+a{
+    font: inherit;
+    text-decoration: none;
+}
+img,svg,canvas,video{
+    display: block;
+    max-width: 100%;
+}
+input,button,select{
+    font: inherit;
+    outline: none;
+    border: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-base);
+    background-color: var(--clr-neutral-cream);
+}
